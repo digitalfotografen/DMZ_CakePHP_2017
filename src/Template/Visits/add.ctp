@@ -18,7 +18,6 @@
     <fieldset>
         <legend><?= __('Add Visit') ?></legend>
         <?php
-            echo $this->Form->control('user_id', ['options' => $users]);
             echo $this->Form->control('city_id', ['options' => $cities]);
         ?>
     </fieldset>

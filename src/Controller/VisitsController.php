@@ -51,23 +51,28 @@ class VisitsController extends AppController
      *
      * @return \Cake\Http\Response|null Redirects on successful add, renders view otherwise.
      */
-    public function add()
-    {
-        $visit = $this->Visits->newEntity();
-        if ($this->request->is('post')) {
-            $visit = $this->Visits->patchEntity($visit, $this->request->getData());
-            if ($this->Visits->save($visit)) {
-                $this->Flash->success(__('The visit has been saved.'));
+public function add()
+{
+    // get user id
+    $userId = $this->Auth->user('id');
+    $visit = $this->Visits->newEntity(); 
+    if ($this->request->is('post')) {
+        $visit = $this->Visits->patchEntity($visit, $this->request->getData());
+        // force to use logged in user
+        $visit = $this->Visits->patchEntity($visit, ['user_id' => $userId]);
+        if ($this->Visits->save($visit)) {
+            $this->Flash->success(__('The visit has been saved.'));
 
-                return $this->redirect(['action' => 'index']);
-            }
-            $this->Flash->error(__('The visit could not be saved. Please, try again.'));
+            return $this->redirect(['action' => 'index']);
         }
-        $users = $this->Visits->Users->find('list', ['limit' => 200]);
-        $cities = $this->Visits->Cities->find('list', ['limit' => 200]);
-        $this->set(compact('visit', 'users', 'cities'));
-        $this->set('_serialize', ['visit']);
+        $this->Flash->error(__('The visit could not be saved. Please, try again.'));
     }
+    $users = $this->Visits->Users->find('list', ['limit' => 200]);
+    // Order by city name
+    $cities = $this->Visits->Cities->find('list')->order(['name' => 'ASC']);
+    $this->set(compact('visit', 'users', 'cities'));
+    $this->set('_serialize', ['visit']);
+}
 
     /**
      * Edit method
