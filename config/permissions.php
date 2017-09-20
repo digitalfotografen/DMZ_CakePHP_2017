@@ -85,10 +85,11 @@ return [
             'allowed' => false,
         ],
         [
-            'role' => ['user'],
+            'role' => '*',
             'controller' => ['Pages'],
             'action' => ['other', 'display'],
             'allowed' => true,
+            'bypassAuth' => true,
         ],
         [
             'role' => ['user'],
@@ -109,5 +110,12 @@ return [
                 }
                 return false;
             }
+        ],
+        [
+            'role' => '*',
+            'controller' => ['Scores'],
+            'action' => ['index', 'top'],
+            'bypassAuth' => true,
+            'allowed' => true,
         ],
     ]];
