@@ -14,6 +14,12 @@ use Cake\Network\Exception\BadRequestException;
 class ScoresController extends AppController
 {
 
+    public function initialize()
+    {
+        parent::initialize();
+        $this->Auth->allow(['index', 'top']);
+    }
+
     /**
      * Top method returns the top Scores
      * Only used for json calls

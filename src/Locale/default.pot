@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2017-09-19 14:02+0000\n"
+"POT-Creation-Date: 2017-09-26 13:59+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -46,19 +46,23 @@ msgstr ""
 msgid "The region could not be deleted. Please, try again."
 msgstr ""
 
-#: Controller/ScoresController.php:57;82
+#: Controller/ScoresController.php:32
+msgid "Only Json Requests allowed"
+msgstr ""
+
+#: Controller/ScoresController.php:96;121
 msgid "The score has been saved."
 msgstr ""
 
-#: Controller/ScoresController.php:61;86
+#: Controller/ScoresController.php:100;125
 msgid "The score could not be saved. Please, try again."
 msgstr ""
 
-#: Controller/ScoresController.php:104
+#: Controller/ScoresController.php:143
 msgid "The score has been deleted."
 msgstr ""
 
-#: Controller/ScoresController.php:106
+#: Controller/ScoresController.php:145
 msgid "The score could not be deleted. Please, try again."
 msgstr ""
 
@@ -104,7 +108,7 @@ msgstr ""
 #: Template/Scores/view.ctp:9
 #: Template/Visits/add.ctp:8
 #: Template/Visits/edit.ctp:8
-#: Template/Visits/index.ctp:9;26
+#: Template/Visits/index.ctp:9;22
 #: Template/Visits/view.ctp:9
 msgid "Actions"
 msgstr ""
@@ -116,9 +120,9 @@ msgstr ""
 #: Template/Regions/edit.ctp:16
 #: Template/Regions/index.ctp:11
 #: Template/Regions/view.ctp:14
-#: Template/Visits/add.ctp:12
+#: Template/Visits/add.ctp:10
 #: Template/Visits/edit.ctp:18
-#: Template/Visits/index.ctp:13
+#: Template/Visits/index.ctp:11
 #: Template/Visits/view.ctp:16
 msgid "List Cities"
 msgstr ""
@@ -152,7 +156,7 @@ msgstr ""
 #: Template/Regions/edit.ctp:28
 #: Template/Scores/add.ctp:21
 #: Template/Scores/edit.ctp:27
-#: Template/Visits/add.ctp:24
+#: Template/Visits/add.ctp:21
 #: Template/Visits/edit.ctp:31
 msgid "Submit"
 msgstr ""
@@ -165,7 +169,7 @@ msgstr ""
 #: Template/Scores/edit.ctp:10
 #: Template/Scores/index.ctp:35
 #: Template/Visits/edit.ctp:10
-#: Template/Visits/index.ctp:39
+#: Template/Visits/index.ctp:33
 msgid "Delete"
 msgstr ""
 
@@ -179,7 +183,7 @@ msgstr ""
 #: Template/Scores/index.ctp:35
 #: Template/Scores/view.ctp:11
 #: Template/Visits/edit.ctp:12
-#: Template/Visits/index.ctp:39
+#: Template/Visits/index.ctp:33
 #: Template/Visits/view.ctp:11
 msgid "Are you sure you want to delete # {0}?"
 msgstr ""
@@ -195,9 +199,7 @@ msgstr ""
 #: Template/Regions/edit.ctp:17
 #: Template/Regions/index.ctp:12
 #: Template/Regions/view.ctp:15
-#: Template/Visits/add.ctp:13
 #: Template/Visits/edit.ctp:19
-#: Template/Visits/index.ctp:14
 #: Template/Visits/view.ctp:17
 msgid "New City"
 msgstr ""
@@ -210,7 +212,7 @@ msgstr ""
 #: Template/Regions/index.ctp:33
 #: Template/Regions/view.ctp:48
 #: Template/Scores/index.ctp:33
-#: Template/Visits/index.ctp:37
+#: Template/Visits/index.ctp:32
 msgid "View"
 msgstr ""
 
@@ -218,42 +220,41 @@ msgstr ""
 #: Template/Regions/index.ctp:34
 #: Template/Regions/view.ctp:49
 #: Template/Scores/index.ctp:34
-#: Template/Visits/index.ctp:38
 msgid "Edit"
 msgstr ""
 
 #: Template/Cities/index.ctp:43
 #: Template/Regions/index.ctp:43
 #: Template/Scores/index.ctp:43
-#: Template/Visits/index.ctp:47
+#: Template/Visits/index.ctp:41
 msgid "first"
 msgstr ""
 
 #: Template/Cities/index.ctp:44
 #: Template/Regions/index.ctp:44
 #: Template/Scores/index.ctp:44
-#: Template/Visits/index.ctp:48
+#: Template/Visits/index.ctp:42
 msgid "previous"
 msgstr ""
 
 #: Template/Cities/index.ctp:46
 #: Template/Regions/index.ctp:46
 #: Template/Scores/index.ctp:46
-#: Template/Visits/index.ctp:50
+#: Template/Visits/index.ctp:44
 msgid "next"
 msgstr ""
 
 #: Template/Cities/index.ctp:47
 #: Template/Regions/index.ctp:47
 #: Template/Scores/index.ctp:47
-#: Template/Visits/index.ctp:51
+#: Template/Visits/index.ctp:45
 msgid "last"
 msgstr ""
 
 #: Template/Cities/index.ctp:49
 #: Template/Regions/index.ctp:49
 #: Template/Scores/index.ctp:49
-#: Template/Visits/index.ctp:53
+#: Template/Visits/index.ctp:47
 msgid "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total"
 msgstr ""
 
@@ -280,6 +281,35 @@ msgstr ""
 #: Template/Cities/view.ctp:35
 #: Template/Regions/view.ctp:38
 msgid "Description"
+msgstr ""
+
+#: Template/Layout/default.ctp:16
+msgid "Sverigeresan - a demo project for DatorMagazin"
+msgstr ""
+
+#: Template/Layout/default.ctp:49
+#: Template/Pages/home.ctp:22
+msgid "Start"
+msgstr ""
+
+#: Template/Layout/default.ctp:50
+msgid "Add visit"
+msgstr ""
+
+#: Template/Layout/default.ctp:52
+msgid "Logout"
+msgstr ""
+
+#: Template/Layout/default.ctp:53
+msgid "Login"
+msgstr ""
+
+#: Template/Layout/default.ctp:59
+msgid "Sverigeresan - a DatorMagazin demo project"
+msgstr ""
+
+#: Template/Layout/default.ctp:61
+msgid "Top 10 tourists"
 msgstr ""
 
 #: Template/Layout/error.ctp:35
@@ -363,22 +393,18 @@ msgstr ""
 msgid "List Visits"
 msgstr ""
 
-#: Template/Visits/add.ctp:10
+#: Template/Visits/add.ctp:16
+msgid "Add Visit"
+msgstr ""
+
 #: Template/Visits/edit.ctp:16
-#: Template/Visits/index.ctp:11
 #: Template/Visits/view.ctp:14
 msgid "List Users"
 msgstr ""
 
-#: Template/Visits/add.ctp:11
 #: Template/Visits/edit.ctp:17
-#: Template/Visits/index.ctp:12
 #: Template/Visits/view.ctp:15
 msgid "New User"
-msgstr ""
-
-#: Template/Visits/add.ctp:19
-msgid "Add Visit"
 msgstr ""
 
 #: Template/Visits/edit.ctp:25
@@ -391,7 +417,7 @@ msgstr ""
 msgid "New Visit"
 msgstr ""
 
-#: Template/Visits/index.ctp:18
+#: Template/Visits/index.ctp:15
 msgid "Visits"
 msgstr ""
 

@@ -4,16 +4,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2017-09-19 15:49+0200\n"
-"PO-Revision-Date: 2017-09-20 12:03+0200\n"
+"POT-Creation-Date: 2017-09-26 15:51+0200\n"
+"PO-Revision-Date: 2017-09-26 15:53+0200\n"
+"Last-Translator: Ulrik Södergren <ulrik@digitalfotografen.se>\n"
 "Language-Team: EMAIL@ADDRESS\n"
+"Language: sv_SE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 1.8.12\n"
-"Last-Translator: Ulrik Södergren <ulrik@digitalfotografen.se>\n"
-"Language: sv_SE\n"
 
 #: Controller/CitiesController.php:60;86
 msgid "The city has been saved."
@@ -47,19 +47,23 @@ msgstr "Regionen har raderats."
 msgid "The region could not be deleted. Please, try again."
 msgstr "Orten kunde inte raderas. Försök igen."
 
-#: Controller/ScoresController.php:57;82
+#: Controller/ScoresController.php:32
+msgid "Only Json Requests allowed"
+msgstr "Bara Json-requests tillåts"
+
+#: Controller/ScoresController.php:96;121
 msgid "The score has been saved."
 msgstr "Poängen har sparats."
 
-#: Controller/ScoresController.php:61;86
+#: Controller/ScoresController.php:100;125
 msgid "The score could not be saved. Please, try again."
 msgstr "Poängen kunde inte sparas. Försök igen."
 
-#: Controller/ScoresController.php:104
+#: Controller/ScoresController.php:143
 msgid "The score has been deleted."
 msgstr "Poängen har tagits bort."
 
-#: Controller/ScoresController.php:106
+#: Controller/ScoresController.php:145
 msgid "The score could not be deleted. Please, try again."
 msgstr "Poängen kunde inte raderas. Försök igen."
 
@@ -98,15 +102,15 @@ msgstr "Användaren {0} har {1} Poäng"
 #: Template/Scores/add.ctp:8 Template/Scores/edit.ctp:8
 #: Template/Scores/index.ctp:9;22 Template/Scores/view.ctp:9
 #: Template/Visits/add.ctp:8 Template/Visits/edit.ctp:8
-#: Template/Visits/index.ctp:9;26 Template/Visits/view.ctp:9
+#: Template/Visits/index.ctp:9;22 Template/Visits/view.ctp:9
 msgid "Actions"
 msgstr "Åtgärder"
 
 #: Template/Cities/add.ctp:9 Template/Cities/edit.ctp:15
 #: Template/Cities/view.ctp:12 Template/Regions/add.ctp:10
 #: Template/Regions/edit.ctp:16 Template/Regions/index.ctp:11
-#: Template/Regions/view.ctp:14 Template/Visits/add.ctp:12
-#: Template/Visits/edit.ctp:18 Template/Visits/index.ctp:13
+#: Template/Regions/view.ctp:14 Template/Visits/add.ctp:10
+#: Template/Visits/edit.ctp:18 Template/Visits/index.ctp:11
 #: Template/Visits/view.ctp:16
 msgid "List Cities"
 msgstr "Lista städer"
@@ -131,7 +135,7 @@ msgstr "Lägg till ort."
 #: Template/Cities/add.ctp:24 Template/Cities/edit.ctp:30
 #: Template/Regions/add.ctp:22 Template/Regions/edit.ctp:28
 #: Template/Scores/add.ctp:21 Template/Scores/edit.ctp:27
-#: Template/Visits/add.ctp:24 Template/Visits/edit.ctp:31
+#: Template/Visits/add.ctp:21 Template/Visits/edit.ctp:31
 msgid "Submit"
 msgstr "Skicka"
 
@@ -139,7 +143,7 @@ msgstr "Skicka"
 #: Template/Regions/edit.ctp:10 Template/Regions/index.ctp:35
 #: Template/Regions/view.ctp:50 Template/Scores/edit.ctp:10
 #: Template/Scores/index.ctp:35 Template/Visits/edit.ctp:10
-#: Template/Visits/index.ctp:39
+#: Template/Visits/index.ctp:33
 msgid "Delete"
 msgstr "Radera"
 
@@ -148,7 +152,7 @@ msgstr "Radera"
 #: Template/Regions/index.ctp:35 Template/Regions/view.ctp:11;50
 #: Template/Scores/edit.ctp:12 Template/Scores/index.ctp:35
 #: Template/Scores/view.ctp:11 Template/Visits/edit.ctp:12
-#: Template/Visits/index.ctp:39 Template/Visits/view.ctp:11
+#: Template/Visits/index.ctp:33 Template/Visits/view.ctp:11
 msgid "Are you sure you want to delete # {0}?"
 msgstr "Är du säker på att du vill radera # {0}?"
 
@@ -159,8 +163,7 @@ msgstr "Redigera ort"
 #: Template/Cities/index.ctp:10 Template/Cities/view.ctp:13
 #: Template/Regions/add.ctp:11 Template/Regions/edit.ctp:17
 #: Template/Regions/index.ctp:12 Template/Regions/view.ctp:15
-#: Template/Visits/add.ctp:13 Template/Visits/edit.ctp:19
-#: Template/Visits/index.ctp:14 Template/Visits/view.ctp:17
+#: Template/Visits/edit.ctp:19 Template/Visits/view.ctp:17
 msgid "New City"
 msgstr "Ny ort"
 
@@ -170,38 +173,37 @@ msgstr "Orter"
 
 #: Template/Cities/index.ctp:33 Template/Regions/index.ctp:33
 #: Template/Regions/view.ctp:48 Template/Scores/index.ctp:33
-#: Template/Visits/index.ctp:37
+#: Template/Visits/index.ctp:32
 msgid "View"
 msgstr "Visa"
 
 #: Template/Cities/index.ctp:34 Template/Regions/index.ctp:34
 #: Template/Regions/view.ctp:49 Template/Scores/index.ctp:34
-#: Template/Visits/index.ctp:38
 msgid "Edit"
 msgstr "Ändra"
 
 #: Template/Cities/index.ctp:43 Template/Regions/index.ctp:43
-#: Template/Scores/index.ctp:43 Template/Visits/index.ctp:47
+#: Template/Scores/index.ctp:43 Template/Visits/index.ctp:41
 msgid "first"
 msgstr "första"
 
 #: Template/Cities/index.ctp:44 Template/Regions/index.ctp:44
-#: Template/Scores/index.ctp:44 Template/Visits/index.ctp:48
+#: Template/Scores/index.ctp:44 Template/Visits/index.ctp:42
 msgid "previous"
 msgstr "föregående"
 
 #: Template/Cities/index.ctp:46 Template/Regions/index.ctp:46
-#: Template/Scores/index.ctp:46 Template/Visits/index.ctp:50
+#: Template/Scores/index.ctp:46 Template/Visits/index.ctp:44
 msgid "next"
 msgstr "nästa"
 
 #: Template/Cities/index.ctp:47 Template/Regions/index.ctp:47
-#: Template/Scores/index.ctp:47 Template/Visits/index.ctp:51
+#: Template/Scores/index.ctp:47 Template/Visits/index.ctp:45
 msgid "last"
 msgstr "sista"
 
 #: Template/Cities/index.ctp:49 Template/Regions/index.ctp:49
-#: Template/Scores/index.ctp:49 Template/Visits/index.ctp:53
+#: Template/Scores/index.ctp:49 Template/Visits/index.ctp:47
 msgid ""
 "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} "
 "total"
@@ -228,6 +230,34 @@ msgstr "Id"
 #: Template/Cities/view.ctp:35 Template/Regions/view.ctp:38
 msgid "Description"
 msgstr "Beskrivning"
+
+#: Template/Layout/default.ctp:16
+msgid "Sverigeresan - a demo project for DatorMagazin"
+msgstr "Sverigeresan - en demo-projektet för DatorMagazin"
+
+#: Template/Layout/default.ctp:49 Template/Pages/home.ctp:22
+msgid "Start"
+msgstr "Start"
+
+#: Template/Layout/default.ctp:50
+msgid "Add visit"
+msgstr "Lägg till besök"
+
+#: Template/Layout/default.ctp:52
+msgid "Logout"
+msgstr "Logga ut"
+
+#: Template/Layout/default.ctp:53
+msgid "Login"
+msgstr "Logga in"
+
+#: Template/Layout/default.ctp:59
+msgid "Sverigeresan - a DatorMagazin demo project"
+msgstr "Sverigeresan - ett DatorMagazin demoprojektet"
+
+#: Template/Layout/default.ctp:61
+msgid "Top 10 tourists"
+msgstr "Topp 10 turister"
 
 #: Template/Layout/error.ctp:35 Template/Error/error400.ctp:36
 #: Template/Error/error500.ctp:41
@@ -304,19 +334,17 @@ msgstr "Ändrad"
 msgid "List Visits"
 msgstr "Lista besök"
 
-#: Template/Visits/add.ctp:10 Template/Visits/edit.ctp:16
-#: Template/Visits/index.ctp:11 Template/Visits/view.ctp:14
+#: Template/Visits/add.ctp:16
+msgid "Add Visit"
+msgstr "Lägg till besök"
+
+#: Template/Visits/edit.ctp:16 Template/Visits/view.ctp:14
 msgid "List Users"
 msgstr "Lista användare"
 
-#: Template/Visits/add.ctp:11 Template/Visits/edit.ctp:17
-#: Template/Visits/index.ctp:12 Template/Visits/view.ctp:15
+#: Template/Visits/edit.ctp:17 Template/Visits/view.ctp:15
 msgid "New User"
 msgstr "Ny användare"
-
-#: Template/Visits/add.ctp:19
-msgid "Add Visit"
-msgstr "Lägg till besök"
 
 #: Template/Visits/edit.ctp:25 Template/Visits/view.ctp:10
 msgid "Edit Visit"
@@ -326,7 +354,7 @@ msgstr "Redigera besök"
 msgid "New Visit"
 msgstr "Nytt besök"
 
-#: Template/Visits/index.ctp:18
+#: Template/Visits/index.ctp:15
 msgid "Visits"
 msgstr "Besök"
 
