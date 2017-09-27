@@ -25,12 +25,12 @@ class ScoreShell extends Shell
     public function getOptionParser()
     {
         $parser = parent::getOptionParser();
+        // add help for the reset command
         $parser->addSubcommand('reset', [
-            // Provide help text for the command list
             'help' => __('Reset game. Clear all scores and delete all visits'),
         ]);
+        // add help for the update command
         $parser->addSubcommand('update', [
-            // Provide help text for the command list
             'help' => __('Update scores'),
         ]);
         return $parser;
@@ -48,7 +48,7 @@ class ScoreShell extends Shell
 
 
     /**
-     * reset() method.
+     * reset() method. resets score and delet all visits for all users
      *
      * @return bool|int|null Success or error code.
      */
@@ -59,7 +59,8 @@ class ScoreShell extends Shell
     }
 
     /**
-     * update() method.
+     * update() method. update Scores
+     * this should be called from a cron script at a few minutes invertal
      *
      * @return bool|int|null Success or error code.
      */

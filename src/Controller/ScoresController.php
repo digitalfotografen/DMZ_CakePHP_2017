@@ -17,12 +17,13 @@ class ScoresController extends AppController
     public function initialize()
     {
         parent::initialize();
+        // make index and top methodes public
         $this->Auth->allow(['index', 'top']);
     }
 
     /**
      * Top method returns the top Scores
-     * Only used for json calls
+     * This is an API call used to serve json repsonse
      *
      * @return \Cake\Http\Response|void
      */
