@@ -1,0 +1,447 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2017-09-26 13:59+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/CitiesController.php:60;86
+msgid "The city has been saved."
+msgstr ""
+
+#: Controller/CitiesController.php:64;90
+msgid "The city could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/CitiesController.php:109
+msgid "The city has been deleted."
+msgstr ""
+
+#: Controller/CitiesController.php:111
+msgid "The city could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/RegionsController.php:57;82
+msgid "The region has been saved."
+msgstr ""
+
+#: Controller/RegionsController.php:61;86
+msgid "The region could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/RegionsController.php:104
+msgid "The region has been deleted."
+msgstr ""
+
+#: Controller/RegionsController.php:106
+msgid "The region could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/ScoresController.php:32
+msgid "Only Json Requests allowed"
+msgstr ""
+
+#: Controller/ScoresController.php:96;121
+msgid "The score has been saved."
+msgstr ""
+
+#: Controller/ScoresController.php:100;125
+msgid "The score could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/ScoresController.php:143
+msgid "The score has been deleted."
+msgstr ""
+
+#: Controller/ScoresController.php:145
+msgid "The score could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/VisitsController.php:64;92
+msgid "The visit has been saved."
+msgstr ""
+
+#: Controller/VisitsController.php:68;96
+msgid "The visit could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/VisitsController.php:116
+msgid "The visit has been deleted."
+msgstr ""
+
+#: Controller/VisitsController.php:118
+msgid "The visit could not be deleted. Please, try again."
+msgstr ""
+
+#: Shell/ScoreShell.php:30
+msgid "Reset game. Clear all scores and delete all visits"
+msgstr ""
+
+#: Shell/ScoreShell.php:34
+msgid "Update scores"
+msgstr ""
+
+#: Shell/ScoreShell.php:86
+msgid "User {0} has {1} points"
+msgstr ""
+
+#: Template/Cities/add.ctp:8
+#: Template/Cities/edit.ctp:8
+#: Template/Cities/index.ctp:9;23
+#: Template/Cities/view.ctp:9
+#: Template/Regions/add.ctp:8
+#: Template/Regions/edit.ctp:8
+#: Template/Regions/index.ctp:9;23
+#: Template/Regions/view.ctp:9;39
+#: Template/Scores/add.ctp:8
+#: Template/Scores/edit.ctp:8
+#: Template/Scores/index.ctp:9;22
+#: Template/Scores/view.ctp:9
+#: Template/Visits/add.ctp:8
+#: Template/Visits/edit.ctp:8
+#: Template/Visits/index.ctp:9;22
+#: Template/Visits/view.ctp:9
+msgid "Actions"
+msgstr ""
+
+#: Template/Cities/add.ctp:9
+#: Template/Cities/edit.ctp:15
+#: Template/Cities/view.ctp:12
+#: Template/Regions/add.ctp:10
+#: Template/Regions/edit.ctp:16
+#: Template/Regions/index.ctp:11
+#: Template/Regions/view.ctp:14
+#: Template/Visits/add.ctp:10
+#: Template/Visits/edit.ctp:18
+#: Template/Visits/index.ctp:11
+#: Template/Visits/view.ctp:16
+msgid "List Cities"
+msgstr ""
+
+#: Template/Cities/add.ctp:10
+#: Template/Cities/edit.ctp:16
+#: Template/Cities/index.ctp:11
+#: Template/Cities/view.ctp:14
+#: Template/Regions/add.ctp:9
+#: Template/Regions/edit.ctp:15
+#: Template/Regions/view.ctp:12
+msgid "List Regions"
+msgstr ""
+
+#: Template/Cities/add.ctp:11
+#: Template/Cities/edit.ctp:17
+#: Template/Cities/index.ctp:12
+#: Template/Cities/view.ctp:15
+#: Template/Regions/index.ctp:10
+#: Template/Regions/view.ctp:13
+msgid "New Region"
+msgstr ""
+
+#: Template/Cities/add.ctp:17
+msgid "Add City"
+msgstr ""
+
+#: Template/Cities/add.ctp:24
+#: Template/Cities/edit.ctp:30
+#: Template/Regions/add.ctp:22
+#: Template/Regions/edit.ctp:28
+#: Template/Scores/add.ctp:21
+#: Template/Scores/edit.ctp:27
+#: Template/Visits/add.ctp:21
+#: Template/Visits/edit.ctp:31
+msgid "Submit"
+msgstr ""
+
+#: Template/Cities/edit.ctp:10
+#: Template/Cities/index.ctp:35
+#: Template/Regions/edit.ctp:10
+#: Template/Regions/index.ctp:35
+#: Template/Regions/view.ctp:50
+#: Template/Scores/edit.ctp:10
+#: Template/Scores/index.ctp:35
+#: Template/Visits/edit.ctp:10
+#: Template/Visits/index.ctp:33
+msgid "Delete"
+msgstr ""
+
+#: Template/Cities/edit.ctp:12
+#: Template/Cities/index.ctp:35
+#: Template/Cities/view.ctp:11
+#: Template/Regions/edit.ctp:12
+#: Template/Regions/index.ctp:35
+#: Template/Regions/view.ctp:11;50
+#: Template/Scores/edit.ctp:12
+#: Template/Scores/index.ctp:35
+#: Template/Scores/view.ctp:11
+#: Template/Visits/edit.ctp:12
+#: Template/Visits/index.ctp:33
+#: Template/Visits/view.ctp:11
+msgid "Are you sure you want to delete # {0}?"
+msgstr ""
+
+#: Template/Cities/edit.ctp:23
+#: Template/Cities/view.ctp:10
+msgid "Edit City"
+msgstr ""
+
+#: Template/Cities/index.ctp:10
+#: Template/Cities/view.ctp:13
+#: Template/Regions/add.ctp:11
+#: Template/Regions/edit.ctp:17
+#: Template/Regions/index.ctp:12
+#: Template/Regions/view.ctp:15
+#: Template/Visits/edit.ctp:19
+#: Template/Visits/view.ctp:17
+msgid "New City"
+msgstr ""
+
+#: Template/Cities/index.ctp:16
+msgid "Cities"
+msgstr ""
+
+#: Template/Cities/index.ctp:33
+#: Template/Regions/index.ctp:33
+#: Template/Regions/view.ctp:48
+#: Template/Scores/index.ctp:33
+#: Template/Visits/index.ctp:32
+msgid "View"
+msgstr ""
+
+#: Template/Cities/index.ctp:34
+#: Template/Regions/index.ctp:34
+#: Template/Regions/view.ctp:49
+#: Template/Scores/index.ctp:34
+msgid "Edit"
+msgstr ""
+
+#: Template/Cities/index.ctp:43
+#: Template/Regions/index.ctp:43
+#: Template/Scores/index.ctp:43
+#: Template/Visits/index.ctp:41
+msgid "first"
+msgstr ""
+
+#: Template/Cities/index.ctp:44
+#: Template/Regions/index.ctp:44
+#: Template/Scores/index.ctp:44
+#: Template/Visits/index.ctp:42
+msgid "previous"
+msgstr ""
+
+#: Template/Cities/index.ctp:46
+#: Template/Regions/index.ctp:46
+#: Template/Scores/index.ctp:46
+#: Template/Visits/index.ctp:44
+msgid "next"
+msgstr ""
+
+#: Template/Cities/index.ctp:47
+#: Template/Regions/index.ctp:47
+#: Template/Scores/index.ctp:47
+#: Template/Visits/index.ctp:45
+msgid "last"
+msgstr ""
+
+#: Template/Cities/index.ctp:49
+#: Template/Regions/index.ctp:49
+#: Template/Scores/index.ctp:49
+#: Template/Visits/index.ctp:47
+msgid "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total"
+msgstr ""
+
+#: Template/Cities/view.ctp:11
+msgid "Delete City"
+msgstr ""
+
+#: Template/Cities/view.ctp:22
+msgid "Region"
+msgstr ""
+
+#: Template/Cities/view.ctp:26
+#: Template/Regions/view.ctp:22;37
+msgid "Name"
+msgstr ""
+
+#: Template/Cities/view.ctp:30
+#: Template/Regions/view.ctp:26;35
+#: Template/Scores/view.ctp:20
+#: Template/Visits/view.ctp:24
+msgid "Id"
+msgstr ""
+
+#: Template/Cities/view.ctp:35
+#: Template/Regions/view.ctp:38
+msgid "Description"
+msgstr ""
+
+#: Template/Layout/default.ctp:16
+msgid "Sverigeresan - a demo project for DatorMagazin"
+msgstr ""
+
+#: Template/Layout/default.ctp:49
+#: Template/Pages/home.ctp:22
+msgid "Start"
+msgstr ""
+
+#: Template/Layout/default.ctp:50
+msgid "Add visit"
+msgstr ""
+
+#: Template/Layout/default.ctp:52
+msgid "Logout"
+msgstr ""
+
+#: Template/Layout/default.ctp:53
+msgid "Login"
+msgstr ""
+
+#: Template/Layout/default.ctp:59
+msgid "Sverigeresan - a DatorMagazin demo project"
+msgstr ""
+
+#: Template/Layout/default.ctp:61
+msgid "Top 10 tourists"
+msgstr ""
+
+#: Template/Layout/error.ctp:35
+#: Template/Error/error400.ctp:36
+#: Template/Error/error500.ctp:41
+msgid "Error"
+msgstr ""
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr ""
+
+#: Template/Regions/add.ctp:17
+msgid "Add Region"
+msgstr ""
+
+#: Template/Regions/edit.ctp:23
+#: Template/Regions/view.ctp:10
+msgid "Edit Region"
+msgstr ""
+
+#: Template/Regions/index.ctp:16
+msgid "Regions"
+msgstr ""
+
+#: Template/Regions/view.ctp:11
+msgid "Delete Region"
+msgstr ""
+
+#: Template/Regions/view.ctp:31
+msgid "Related Cities"
+msgstr ""
+
+#: Template/Regions/view.ctp:36
+msgid "Region Id"
+msgstr ""
+
+#: Template/Scores/add.ctp:9
+#: Template/Scores/edit.ctp:15
+#: Template/Scores/view.ctp:12
+msgid "List Scores"
+msgstr ""
+
+#: Template/Scores/add.ctp:15
+msgid "Add Score"
+msgstr ""
+
+#: Template/Scores/edit.ctp:21
+#: Template/Scores/view.ctp:10
+msgid "Edit Score"
+msgstr ""
+
+#: Template/Scores/index.ctp:10
+#: Template/Scores/view.ctp:13
+msgid "New Score"
+msgstr ""
+
+#: Template/Scores/index.ctp:14
+msgid "Scores"
+msgstr ""
+
+#: Template/Scores/view.ctp:11
+msgid "Delete Score"
+msgstr ""
+
+#: Template/Scores/view.ctp:24
+msgid "User Id"
+msgstr ""
+
+#: Template/Scores/view.ctp:28
+msgid "Points"
+msgstr ""
+
+#: Template/Scores/view.ctp:32
+msgid "Modified"
+msgstr ""
+
+#: Template/Visits/add.ctp:9
+#: Template/Visits/edit.ctp:15
+#: Template/Visits/view.ctp:12
+msgid "List Visits"
+msgstr ""
+
+#: Template/Visits/add.ctp:16
+msgid "Add Visit"
+msgstr ""
+
+#: Template/Visits/edit.ctp:16
+#: Template/Visits/view.ctp:14
+msgid "List Users"
+msgstr ""
+
+#: Template/Visits/edit.ctp:17
+#: Template/Visits/view.ctp:15
+msgid "New User"
+msgstr ""
+
+#: Template/Visits/edit.ctp:25
+#: Template/Visits/view.ctp:10
+msgid "Edit Visit"
+msgstr ""
+
+#: Template/Visits/index.ctp:10
+#: Template/Visits/view.ctp:13
+msgid "New Visit"
+msgstr ""
+
+#: Template/Visits/index.ctp:15
+msgid "Visits"
+msgstr ""
+
+#: Template/Visits/view.ctp:11
+msgid "Delete Visit"
+msgstr ""
+
+#: Template/Visits/view.ctp:28
+msgid "User"
+msgstr ""
+
+#: Template/Visits/view.ctp:32
+msgid "City"
+msgstr ""
+
+#: Template/Visits/view.ctp:36
+msgid "Created"
+msgstr ""
+
+#: Template/Error/error400.ctp:37
+msgid "The requested address {0} was not found on this server."
+msgstr ""
+
+#: Template/Error/error500.ctp:39
+msgid "An Internal Error Has Occurred"
+msgstr ""
+

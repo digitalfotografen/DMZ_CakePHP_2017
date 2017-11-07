@@ -17,6 +17,7 @@ namespace App;
 use Cake\Core\Configure;
 use Cake\Error\Middleware\ErrorHandlerMiddleware;
 use Cake\Http\BaseApplication;
+use Cake\I18n\Middleware\LocaleSelectorMiddleware;
 use Cake\Routing\Middleware\AssetMiddleware;
 use Cake\Routing\Middleware\RoutingMiddleware;
 
@@ -46,6 +47,9 @@ class Application extends BaseApplication
 
             // Apply routing
             ->add(RoutingMiddleware::class);
+
+        // Add middleware and set the valid locales
+        $middleware->add(new LocaleSelectorMiddleware([ 'sv_SE', 'en_US']));
 
         return $middleware;
     }

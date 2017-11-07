@@ -7,22 +7,21 @@ use Cake\ORM\Table;
 use Cake\Validation\Validator;
 
 /**
- * Visits Model
+ * Scores Model
  *
- * @property \CakeDC\Users\Model\Table\UsersTable|\Cake\ORM\Association\BelongsTo $Users
- * @property \App\Model\Table\CitiesTable|\Cake\ORM\Association\BelongsTo $Cities
+ * @property |\Cake\ORM\Association\BelongsTo $Users
  *
- * @method \App\Model\Entity\Visit get($primaryKey, $options = [])
- * @method \App\Model\Entity\Visit newEntity($data = null, array $options = [])
- * @method \App\Model\Entity\Visit[] newEntities(array $data, array $options = [])
- * @method \App\Model\Entity\Visit|bool save(\Cake\Datasource\EntityInterface $entity, $options = [])
- * @method \App\Model\Entity\Visit patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
- * @method \App\Model\Entity\Visit[] patchEntities($entities, array $data, array $options = [])
- * @method \App\Model\Entity\Visit findOrCreate($search, callable $callback = null, $options = [])
+ * @method \App\Model\Entity\Score get($primaryKey, $options = [])
+ * @method \App\Model\Entity\Score newEntity($data = null, array $options = [])
+ * @method \App\Model\Entity\Score[] newEntities(array $data, array $options = [])
+ * @method \App\Model\Entity\Score|bool save(\Cake\Datasource\EntityInterface $entity, $options = [])
+ * @method \App\Model\Entity\Score patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
+ * @method \App\Model\Entity\Score[] patchEntities($entities, array $data, array $options = [])
+ * @method \App\Model\Entity\Score findOrCreate($search, callable $callback = null, $options = [])
  *
  * @mixin \Cake\ORM\Behavior\TimestampBehavior
  */
-class VisitsTable extends Table
+class ScoresTable extends Table
 {
 
     /**
@@ -35,19 +34,15 @@ class VisitsTable extends Table
     {
         parent::initialize($config);
 
-        $this->setTable('visits');
+        $this->setTable('scores');
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
 
-        $this->belongsTo('Users', [
+        $this->belongsTo('MyUsers', [
             'className' => 'MyUsers',
             'foreignKey' => 'user_id',
-            'joinType' => 'INNER'
-        ]);
-        $this->belongsTo('Cities', [
-            'foreignKey' => 'city_id',
             'joinType' => 'INNER'
         ]);
     }
@@ -64,6 +59,11 @@ class VisitsTable extends Table
             ->uuid('id')
             ->allowEmpty('id', 'create');
 
+        $validator
+            ->integer('points')
+            ->requirePresence('points', 'create')
+            ->notEmpty('points');
+
         return $validator;
     }
 
@@ -76,8 +76,7 @@ class VisitsTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['user_id'], 'Users'));
-        $rules->add($rules->existsIn(['city_id'], 'Cities'));
+        $rules->add($rules->existsIn(['user_id'], 'MyUsers'));
 
         return $rules;
     }

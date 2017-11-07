@@ -13,13 +13,16 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-$cakeDescription = 'CakePHP: the rapid development php framework';
+$cakeDescription = __('Sverigeresan - a demo project for DatorMagazin');
+$this->Html->script('//code.jquery.com/jquery.min.js', ['block' => true]);
+$this->Html->script('topscore', ['block' => true]);
 ?>
 <!DOCTYPE html>
 <html>
 <head>
     <?= $this->Html->charset() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500i|Roboto:300,400,700|Roboto+Mono" rel="stylesheet">
     <title>
         <?= $cakeDescription ?>:
         <?= $this->fetch('title') ?>
@@ -28,6 +31,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
     <?= $this->Html->css('base.css') ?>
     <?= $this->Html->css('cake.css') ?>
+    <?= $this->Html->css('home.css') ?>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
@@ -42,16 +46,25 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         </ul>
         <div class="top-bar-section">
             <ul class="right">
-                <li><a target="_blank" href="http://book.cakephp.org/3.0/">Documentation</a></li>
-                <li><a target="_blank" href="http://api.cakephp.org/3.0/">API</a></li>
+                <li><a href="/"><?= __('Start') ?></a></li>
+                <li><?= $this->AuthLink->link(__('Add visit'), ['controller' => 'Visits', 'action' => 'add']); ?></li>
+                <?= $this->AuthLink->isAuthorized(['controller' => 'Visits', 'action' => 'add']) ? 
+                    '<li><a href="/logout">' . __('Logout') .'</a></li>' : 
+                    '<li><a href="/login">' . __('Login') .'</a></li>';
+                ?>
             </ul>
         </div>
     </nav>
+    <header class="row">
+        <div class="header-image"><?= __('Sverigeresan - a DatorMagazin demo project') ?></div>
+        <div class="header-title">
+            <h1><?= __('Top 10 tourists') ?></h1>
+            <div id="top10"></div>
+        </div>
+    </header>
     <?= $this->Flash->render() ?>
     <div class="container clearfix">
         <?= $this->fetch('content') ?>
     </div>
-    <footer>
-    </footer>
 </body>
 </html>

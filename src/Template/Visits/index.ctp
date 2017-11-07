@@ -8,10 +8,7 @@
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('New Visit'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Cities'), ['controller' => 'Cities', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New City'), ['controller' => 'Cities', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="visits index large-9 medium-8 columns content">
@@ -19,7 +16,6 @@
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('user_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('city_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
@@ -29,13 +25,11 @@
         <tbody>
             <?php foreach ($visits as $visit): ?>
             <tr>
-                <td><?= h($visit->id) ?></td>
-                <td><?= $visit->has('user') ? $this->Html->link($visit->user->id, ['controller' => 'Users', 'action' => 'view', $visit->user->id]) : '' ?></td>
+                <td><?= $visit->has('user') ? $this->Html->link($visit->user->username, ['controller' => 'Users', 'action' => 'view', $visit->user->id]) : '' ?></td>
                 <td><?= $visit->has('city') ? $this->Html->link($visit->city->name, ['controller' => 'Cities', 'action' => 'view', $visit->city->id]) : '' ?></td>
                 <td><?= h($visit->created) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $visit->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $visit->id]) ?>
                     <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $visit->id], ['confirm' => __('Are you sure you want to delete # {0}?', $visit->id)]) ?>
                 </td>
             </tr>

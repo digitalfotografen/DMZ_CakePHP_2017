@@ -85,7 +85,7 @@ return [
             'allowed' => false,
         ],
         [
-            'role' => ['user'],
+            'role' => '*',
             'controller' => ['Pages'],
             'action' => ['other', 'display'],
             'allowed' => true,
@@ -109,5 +109,11 @@ return [
                 }
                 return false;
             }
+        ],
+        [
+            'role' => '*',
+            'controller' => ['Scores'],
+            'action' => ['index', 'top'],
+            'allowed' => true,
         ],
     ]];
